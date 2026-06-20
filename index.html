@@ -14,6 +14,7 @@
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#c9822a" />
+    <link rel="canonical" href="https://abdulazizbinmostafa.github.io/fast-workshop-1.0/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Fast Workshop | Fast Mobil Chula" />
@@ -25,6 +26,7 @@
       property="og:image"
       content="product%20photo/WhatsApp%20Image%202026-06-20%20at%2014.26.47.jpeg"
     />
+    <meta property="og:url" content="https://abdulazizbinmostafa.github.io/fast-workshop-1.0/" />
     <meta property="og:locale" content="bn_BD" />
 
     <link
@@ -132,6 +134,7 @@
           <div class="hero-meta" aria-label="মূল সুবিধা">
             <span>সারা বাংলাদেশে ডেলিভারি</span>
             <span>শুরু মাত্র ৳৩,৯৯৯</span>
+            <span>কল: 01301530717</span>
           </div>
         </div>
       </section>
@@ -358,7 +361,7 @@
             </div>
 
             <div class="payment-extra" id="paymentExtra" hidden>
-              <p>পেমেন্ট সম্পন্ন করার পর Transaction ID দিন</p>
+              <p>পেমেন্ট সম্পন্ন করার পর Transaction ID দিন। আমরা কখনো PIN, পাসওয়ার্ড বা OTP চাই না।</p>
 
               <div class="form-group">
                 <label for="transactionId">Transaction ID</label>
@@ -369,12 +372,6 @@
                   placeholder="যেমন: A1B2C3D4"
                   autocomplete="off"
                 />
-              </div>
-
-              <div class="form-group">
-                <label for="paymentScreenshot">Payment Screenshot Upload</label>
-                <input id="paymentScreenshot" type="file" accept="image/*" />
-                <small>স্ক্রিনশট ২MB-এর কম হলে ভালো কাজ করবে।</small>
               </div>
             </div>
 
@@ -387,6 +384,11 @@
             <button class="btn btn-primary form-submit" type="submit">
               অর্ডার নিশ্চিত করুন
             </button>
+
+            <p class="privacy-note">
+              আপনার নাম, ফোন ও ঠিকানা শুধু অর্ডার নিশ্চিতকরণ এবং ডেলিভারির জন্য
+              ব্যবহার করা হবে।
+            </p>
 
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
@@ -430,7 +432,10 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="currentYear"></span> Fast Workshop. সর্বস্বত্ব সংরক্ষিত।</p>
-        <a href="#home">উপরে যান</a>
+        <div class="footer-links">
+          <a href="privacy.html">প্রাইভেসি নীতি</a>
+          <a href="#home">উপরে যান</a>
+        </div>
       </div>
     </footer>
 

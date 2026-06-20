@@ -1,7 +1,5 @@
 const SPREADSHEET_ID = "";
 const SHEET_NAME = "Orders";
-const PAYMENT_SCREENSHOT_FOLDER_ID = "";
-
 const HEADERS = [
   "Order ID",
   "Submitted At",
@@ -14,7 +12,6 @@ const HEADERS = [
   "Payment Method",
   "Transaction ID",
   "Order Total",
-  "Payment Screenshot URL",
 ];
 
 function doGet() {
@@ -26,7 +23,6 @@ function doPost(e) {
     const data = e.parameter || {};
     const sheet = getOrderSheet();
     const orderId = createOrderId();
-    const screenshotUrl = savePaymentScreenshot(data, orderId);
 
     sheet.appendRow([
       orderId,
@@ -40,7 +36,6 @@ function doPost(e) {
       data["Payment Method"] || "",
       data["Transaction ID"] || "",
       data["Order Total"] || "",
-      screenshotUrl,
     ]);
 
     return jsonResponse({
@@ -77,25 +72,6 @@ function getOrderSheet() {
   }
 
   return sheet;
-}
-
-function savePaymentScreenshot(data, orderId) {
-  const base64 = data["Payment Screenshot Base64"];
-
-  if (!base64) {
-    return "";
-  }
-
-  const fileName = data["Payment Screenshot Name"] || `${orderId}-payment-screenshot.jpg`;
-  const mimeType = data["Payment Screenshot Type"] || "image/jpeg";
-  const bytes = Utilities.base64Decode(base64);
-  const blob = Utilities.newBlob(bytes, mimeType, `${orderId}-${fileName}`);
-  const file = PAYMENT_SCREENSHOT_FOLDER_ID
-    ? DriveApp.getFolderById(PAYMENT_SCREENSHOT_FOLDER_ID).createFile(blob)
-    : DriveApp.createFile(blob);
-
-  file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-  return file.getUrl();
 }
 
 function createOrderId() {

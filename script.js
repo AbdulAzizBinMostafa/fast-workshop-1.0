@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const paymentMethod = document.querySelector("#paymentMethod");
   const paymentExtra = document.querySelector("#paymentExtra");
   const transactionId = document.querySelector("#transactionId");
-  const screenshotInput = document.querySelector("#paymentScreenshot");
   const totalInput = document.querySelector("#orderTotal");
   const totalView = document.querySelector("#orderTotalView");
   const status = document.querySelector("#formStatus");
@@ -58,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!needsTransaction) {
       transactionId.value = "";
-      screenshotInput.value = "";
     }
   }
 
@@ -71,29 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#order").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function fileToBase64(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(String(reader.result).split(",")[1] || "");
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  }
-
-  async function buildPayload() {
+  function buildPayload() {
     const formData = new FormData(form);
-    const screenshot = screenshotInput.files[0];
-
-    if (screenshot) {
-      if (screenshot.size > 2 * 1024 * 1024) {
-        throw new Error("স্ক্রিনশট ২MB-এর কম দিন।");
-      }
-
-      formData.append("Payment Screenshot Name", screenshot.name);
-      formData.append("Payment Screenshot Type", screenshot.type);
-      formData.append("Payment Screenshot Base64", await fileToBase64(screenshot));
-    }
-
     formData.append("Submitted At", new Date().toISOString());
     return formData;
   }
@@ -124,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton.textContent = "অর্ডার পাঠানো হচ্ছে...";
 
     try {
-      const payload = await buildPayload();
+      const payload = buildPayload();
 
       // Static hosts and Apps Script commonly use no-cors form posts.
       await fetch(scriptURL, {
