@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbwetA7Ieq0FWNxsCkwZFN_CRY4olvucVEzPjzHv41APqRIBD2P9SBb7vcCBaa8-7M-q/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzZU6uS1iVZ_ujFPpj3AsS301DrTonXBtweN42H9qy8eb0kb0gMXonzVjSUxJ0GHHGb/exec";
 
 const products = [
   { name: "Mini Fast Mobil Chula", code: "FMC001", price: 3999 },
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function buildPayload() {
     const formData = new FormData(form);
     formData.append("Submitted At", new Date().toISOString());
-    return formData;
+    return new URLSearchParams(formData);
   }
 
   productSelect.addEventListener("change", updateOrderSummary);

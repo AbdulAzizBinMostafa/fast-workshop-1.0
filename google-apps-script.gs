@@ -19,7 +19,11 @@ function doGet() {
 }
 
 function doPost(e) {
+  const lock = LockService.getScriptLock();
   try {
+    // Wait for up to 30 seconds for other operations to complete.
+    lock.waitLock(30000);
+
     const data = e.parameter || {};
     const sheet = getOrderSheet();
     const orderId = createOrderId();
@@ -48,6 +52,8 @@ function doPost(e) {
       success: false,
       message: error.message,
     });
+  } finally {
+    lock.releaseLock();
   }
 }
 
