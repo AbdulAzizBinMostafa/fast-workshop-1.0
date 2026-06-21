@@ -29,6 +29,14 @@
     <meta property="og:url" content="https://abdulazizbinmostafa.github.io/fast-workshop-1.0/" />
     <meta property="og:locale" content="bn_BD" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="preload"
       href="product%20photo/WhatsApp%20Image%202026-06-20%20at%2014.26.47.jpeg"
@@ -88,6 +96,7 @@
   <body>
     <a class="skip-link" href="#order">অর্ডার ফর্মে যান</a>
 
+    <!-- ── Header ── -->
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="#home" aria-label="Fast Workshop হোম">
@@ -105,7 +114,8 @@
     </header>
 
     <main id="home">
-      <!-- Hero -->
+
+      <!-- ── Hero ── -->
       <section class="hero" aria-label="Fast Mobil Chula">
         <img
           class="hero-bg"
@@ -122,13 +132,13 @@
           <h1>Fast Mobil Chula</h1>
           <p class="hero-subtitle">দ্রুত রান্না, কম খরচ, সহজ ব্যবহার</p>
           <p class="hero-text">
-            অতিরিক্ত গ্যাস বিল আর ধোঁয়াময় রান্নাঘরের দিন শেষ। আধুনিক মবিল
-            চুলায় পাবেন অধিক সাশ্রয় এবং কালিমুক্ত সহজ রান্নার নিশ্চয়তা।
+            অতিরিক্ত গ্যাস বিল আর ধোঁয়াময় রান্নাঘরের দিন শেষ। আধুনিক মবিল
+            চুলায় পাবেন অধিক সাশ্রয় এবং কালিমুক্ত সহজ রান্নার নিশ্চয়তা।
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#order">এখনই অর্ডার করুন</a>
-            <a class="btn btn-light" href="#products">পণ্য দেখুন</a>
+            <a class="btn btn-primary" href="#order">🛒 এখনই অর্ডার করুন</a>
+            <a class="btn btn-light" href="#products">পণ্য দেখুন →</a>
           </div>
 
           <div class="hero-meta" aria-label="মূল সুবিধা">
@@ -139,29 +149,43 @@
         </div>
       </section>
 
-      <!-- Trust -->
+      <!-- ── Trust Bar ── -->
       <section class="trust-section" aria-label="ভরসার কারণ">
         <div class="container trust-grid">
-          <div>✓ দ্রুত ডেলিভারি</div>
-          <div>✓ নিরাপদ পেমেন্ট</div>
-          <div>✓ মানসম্মত পণ্য</div>
-          <div>✓ গ্রাহক সেবা</div>
+          <div>
+            <span class="trust-icon">🚚</span>
+            দ্রুত ডেলিভারি
+          </div>
+          <div>
+            <span class="trust-icon">🔒</span>
+            নিরাপদ পেমেন্ট
+          </div>
+          <div>
+            <span class="trust-icon">⭐</span>
+            মানসম্মত পণ্য
+          </div>
+          <div>
+            <span class="trust-icon">📞</span>
+            সেরা গ্রাহক সেবা
+          </div>
         </div>
       </section>
 
-      <!-- Products -->
+      <!-- ── Products ── -->
       <section class="section" id="products">
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">আমাদের পণ্য</p>
-            <h2>আপনার প্রয়োজন অনুযায়ী মডেল বেছে নিন</h2>
+            <h2>আপনার প্রয়োজন অনুযায়ী মডেল বেছে নিন</h2>
             <p>
-              ঘর, দোকান, পিকনিক বা বাইরের ব্যবহারের জন্য সহজে বহনযোগ্য Fast
-              Mobil Chula।
+              ঘর, দোকান, পিকনিক বা বাইরের ব্যবহারের জন্য সহজে বহনযোগ্য
+              Fast Mobil Chula।
             </p>
           </div>
 
           <div class="product-grid">
+
+            <!-- Mini -->
             <article class="product-card">
               <div class="product-image">
                 <img
@@ -175,18 +199,20 @@
               <div class="product-body">
                 <h3>Mini Fast Mobil Chula</h3>
                 <p class="product-code">কোড: FMC001</p>
+                <p class="product-stars">★★★★★</p>
                 <p class="product-price">৳৩,৯৯৯</p>
                 <ul>
-                  <li>ছোট পরিবারের জন্য</li>
-                  <li>কম জায়গায় রাখা যায়</li>
-                  <li>সহজে বহনযোগ্য ডিজাইন</li>
+                  <li>ছোট পরিবারের জন্য আদর্শ</li>
+                  <li>কম জায়গায় সহজে রাখা যায়</li>
+                  <li>হালকা ও বহনযোগ্য ডিজাইন</li>
                 </ul>
                 <button class="btn btn-outline" type="button" data-order-product="FMC001">
-                  অর্ডার করুন
+                  🛒 অর্ডার করুন
                 </button>
               </div>
             </article>
 
+            <!-- Medium (featured) -->
             <article class="product-card featured">
               <div class="product-image">
                 <img
@@ -200,18 +226,20 @@
               <div class="product-body">
                 <h3>Medium Fast Mobil Chula</h3>
                 <p class="product-code">কোড: FMC002</p>
+                <p class="product-stars">★★★★★</p>
                 <p class="product-price">৳৪,৯৯৯</p>
                 <ul>
-                  <li>বড় পরিবারের জন্য</li>
-                  <li>দ্রুত তাপ ছড়ায়</li>
-                  <li>ঘর ও বাইরের কাজে সুবিধাজনক</li>
+                  <li>বড় পরিবারের জন্য সেরা পছন্দ</li>
+                  <li>দ্রুত ও সমান তাপ ছড়ায়</li>
+                  <li>ঘর ও বাইরে সমান সুবিধাজনক</li>
                 </ul>
                 <button class="btn btn-outline" type="button" data-order-product="FMC002">
-                  অর্ডার করুন
+                  🛒 অর্ডার করুন
                 </button>
               </div>
             </article>
 
+            <!-- Big -->
             <article class="product-card">
               <div class="product-image">
                 <img
@@ -220,73 +248,99 @@
                   loading="lazy"
                   decoding="async"
                 />
-                <span>বড়</span>
+                <span>বড়</span>
               </div>
               <div class="product-body">
                 <h3>Big Fast Mobil Chula</h3>
                 <p class="product-code">কোড: FMC003</p>
+                <p class="product-stars">★★★★★</p>
                 <p class="product-price">৳৬,৯৯৯</p>
                 <ul>
-                  <li>হোটেল, রেস্টুরেন্টের জন্য</li>
-                  <li>মজবুত নির্মাণ</li>
-                  <li>দীর্ঘস্থায়ী ব্যবহারের জন্য তৈরি</li>
+                  <li>হোটেল, রেস্টুরেন্টের জন্য তৈরি</li>
+                  <li>মজবুত ও দীর্ঘস্থায়ী নির্মাণ</li>
+                  <li>ভারী কাজের জন্য উপযোগী</li>
                 </ul>
                 <button class="btn btn-outline" type="button" data-order-product="FMC003">
-                  অর্ডার করুন
+                  🛒 অর্ডার করুন
                 </button>
               </div>
             </article>
+
           </div>
         </div>
       </section>
 
-      <!-- Details -->
+      <!-- ── Details / Features ── -->
       <section class="section details-section">
         <div class="container details-layout">
           <div class="section-heading left">
             <p class="section-kicker">কেন Fast Mobil Chula</p>
             <h2>ঝটপট ও ঝামেলাহীন রান্নার সেরা চাবিকাঠি</h2>
             <p>
-              আধুনিক মবিল চুলায় পাবেন অধিক সাশ্রয়, সহজ নিয়ন্ত্রণ এবং ধোঁয়ামুক্ত
-              ব্যবহারের সুবিধা।
+              আধুনিক মবিল চুলায় পাবেন অধিক সাশ্রয়, সহজ নিয়ন্ত্রণ এবং
+              ধোঁয়ামুক্ত ব্যবহারের সুবিধা।
             </p>
           </div>
 
           <div class="feature-grid">
-            <div class="feature-item">✓ দ্রুত রান্না</div>
-            <div class="feature-item">✓ ব্যবহার সহজ</div>
-            <div class="feature-item">✓ কম জ্বালানি খরচ</div>
-            <div class="feature-item">✓ বহনযোগ্য ডিজাইন</div>
-            <div class="feature-item wide">✓ ঘরের ও বাইরের ব্যবহারের জন্য উপযোগী</div>
+            <div class="feature-item">
+              <span class="feature-icon">⚡</span>
+              দ্রুত রান্না হয়, সময় বাঁচে
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🤲</span>
+              ব্যবহার করা সহজ, যে কেউ পারবে
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💰</span>
+              কম জ্বালানি খরচে বেশি রান্না
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🎒</span>
+              হালকা ও বহনযোগ্য ডিজাইন
+            </div>
+            <div class="feature-item wide">
+              <span class="feature-icon">🏠</span>
+              ঘরের ভেতরে ও বাইরে — সব জায়গায় ব্যবহারযোগ্য
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Order -->
+      <!-- ── Order ── -->
       <section class="section order-section" id="order">
         <div class="container order-layout">
           <div class="order-copy">
             <p class="section-kicker">অর্ডার ফর্ম</p>
-            <h2>নিচের তথ্য দিয়ে অর্ডার নিশ্চিত করুন</h2>
+            <h2>নিচের তথ্য দিয়ে অর্ডার নিশ্চিত করুন</h2>
             <p>
-              ফর্ম জমা দেওয়ার পর আমাদের প্রতিনিধি আপনার ফোনে যোগাযোগ করে
+              ফর্ম জমা দেওয়ার পর আমাদের প্রতিনিধি আপনার ফোনে যোগাযোগ করে
               ডেলিভারি ও পেমেন্ট নিশ্চিত করবে।
             </p>
             <div class="order-steps" aria-label="অর্ডারের ধাপ">
-              <span>১. তথ্য দিন</span>
-              <span>২. পণ্য বাছুন</span>
-              <span>৩. অর্ডার নিশ্চিত করুন</span>
+              <span>
+                <span class="step-num">১</span>
+                তথ্য দিন ও পণ্য বাছুন
+              </span>
+              <span>
+                <span class="step-num">২</span>
+                পেমেন্ট পদ্ধতি নির্বাচন করুন
+              </span>
+              <span>
+                <span class="step-num">৩</span>
+                অর্ডার সাবমিট করুন, আমরা কল করব
+              </span>
             </div>
           </div>
 
           <form class="order-form" id="orderForm">
             <div class="form-group">
-              <label for="customerName">নাম</label>
+              <label for="customerName">আপনার নাম</label>
               <input
                 id="customerName"
                 name="Name"
                 type="text"
-                placeholder="আপনার পূর্ণ নাম"
+                placeholder="আপনার পূর্ণ নাম লিখুন"
                 autocomplete="name"
                 required
               />
@@ -324,13 +378,13 @@
                 <select id="productSelect" name="Product" required>
                   <option value="">পণ্য নির্বাচন করুন</option>
                   <option value="Mini Fast Mobil Chula" data-code="FMC001" data-price="3999">
-                    Mini Fast Mobil Chula - ৳৩,৯৯৯
+                    Mini Fast Mobil Chula — ৳৩,৯৯৯
                   </option>
                   <option value="Medium Fast Mobil Chula" data-code="FMC002" data-price="4999">
-                    Medium Fast Mobil Chula - ৳৪,৯৯৯
+                    Medium Fast Mobil Chula — ৳৪,৯৯৯
                   </option>
                   <option value="Big Fast Mobil Chula" data-code="FMC003" data-price="6999">
-                    Big Fast Mobil Chula - ৳৬,৯৯৯
+                    Big Fast Mobil Chula — ৳৬,৯৯৯
                   </option>
                 </select>
                 <input id="productCode" name="Product Code" type="hidden" />
@@ -354,15 +408,14 @@
               <label for="paymentMethod">পেমেন্ট পদ্ধতি</label>
               <select id="paymentMethod" name="Payment Method" required>
                 <option value="">পেমেন্ট পদ্ধতি নির্বাচন করুন</option>
-                <option value="Cash on Delivery">ক্যাশ অন ডেলিভারি</option>
-                <option value="bKash">বিকাশ</option>
-                <option value="Nagad">নগদ</option>
+                <option value="Cash on Delivery">💵 ক্যাশ অন ডেলিভারি</option>
+                <option value="bKash">📱 বিকাশ</option>
+                <option value="Nagad">📱 নগদ</option>
               </select>
             </div>
 
             <div class="payment-extra" id="paymentExtra" hidden>
-              <p>পেমেন্ট সম্পন্ন করার পর Transaction ID দিন। আমরা কখনো PIN, পাসওয়ার্ড বা OTP চাই না।</p>
-
+              <p>⚠️ পেমেন্ট সম্পন্ন করার পর Transaction ID দিন। আমরা কখনো PIN, পাসওয়ার্ড বা OTP চাই না।</p>
               <div class="form-group">
                 <label for="transactionId">Transaction ID</label>
                 <input
@@ -376,18 +429,17 @@
             </div>
 
             <div class="order-total">
-              <span>মোট মূল্য</span>
+              <span>💳 মোট মূল্য</span>
               <strong id="orderTotalView">৳০</strong>
               <input id="orderTotal" name="Order Total" type="hidden" />
             </div>
 
             <button class="btn btn-primary form-submit" type="submit">
-              অর্ডার নিশ্চিত করুন
+              ✅ অর্ডার নিশ্চিত করুন
             </button>
 
             <p class="privacy-note">
-              আপনার নাম, ফোন ও ঠিকানা শুধু অর্ডার নিশ্চিতকরণ এবং ডেলিভারির জন্য
-              ব্যবহার করা হবে।
+              🔒 আপনার নাম, ফোন ও ঠিকানা শুধু অর্ডার ও ডেলিভারির জন্য ব্যবহার করা হবে।
             </p>
 
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
@@ -395,52 +447,64 @@
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- ── Contact ── -->
       <section class="section contact-section" id="contact">
         <div class="container contact-layout">
           <div>
             <p class="section-kicker">যোগাযোগ</p>
             <h2>Fast Workshop</h2>
             <p>
-              অর্ডার, ডেলিভারি বা পণ্য সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।
+              অর্ডার, ডেলিভারি বা পণ্য সম্পর্কে যেকোনো তথ্যের জন্য
+              সরাসরি যোগাযোগ করুন — আমরা সবসময় সাহায্য করতে প্রস্তুত।
             </p>
           </div>
 
           <div class="contact-list">
-            <a href="tel:01301530717">
-              <span>ফোন</span>
-              01301530717
+            <a href="tel:01301530717" id="contact-phone">
+              <span class="contact-icon">📞</span>
+              <span class="contact-info">
+                <strong>01301530717</strong>
+                <span>ফোন কল করুন</span>
+              </span>
             </a>
-            <a href="https://wa.me/8801794842150" target="_blank" rel="noopener">
-              <span>WhatsApp</span>
-              +880 1794-842150
+            <a href="https://wa.me/8801794842150" target="_blank" rel="noopener" id="contact-whatsapp">
+              <span class="contact-icon">💬</span>
+              <span class="contact-info">
+                <strong>+880 1794-842150</strong>
+                <span>WhatsApp মেসেজ করুন</span>
+              </span>
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61590583741688"
               target="_blank"
               rel="noopener"
               aria-label="Fast Workshop Facebook Page"
+              id="contact-facebook"
             >
-              <span>Facebook Page</span>
-              Fast Workshop Facebook Page
+              <span class="contact-icon">📘</span>
+              <span class="contact-info">
+                <strong>Fast Workshop</strong>
+                <span>Facebook Page দেখুন</span>
+              </span>
             </a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- ── Footer ── -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="currentYear"></span> Fast Workshop. সর্বস্বত্ব সংরক্ষিত।</p>
         <div class="footer-links">
           <a href="privacy.html">প্রাইভেসি নীতি</a>
-          <a href="#home">উপরে যান</a>
+          <a href="#home">↑ উপরে যান</a>
         </div>
       </div>
     </footer>
 
-    <a class="sticky-order" href="#order" aria-label="এখনই অর্ডার করুন">
-      এখনই অর্ডার করুন
+    <a class="sticky-order" href="#order" aria-label="এখনই অর্ডার করুন" id="sticky-order-btn">
+      🛒 এখনই অর্ডার করুন
     </a>
 
     <script src="script.js" defer></script>
