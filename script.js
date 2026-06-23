@@ -2,8 +2,8 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzZU6uS1iVZ_ujFPpj3As
 
 const products = [
   { name: "Mini Fast Mobil Chula", code: "FMC001", price: 3999 },
-  { name: "Medium Fast Mobil Chula", code: "FMC002", price: 4999 },
-  { name: "Big Fast Mobil Chula", code: "FMC003", price: 5999 },
+  { name: "Medium Fast Mobil Chula", code: "FMC002", price: 4499 },
+  { name: "Big Fast Mobil Chula", code: "FMC003", price: 4999 },
 ];
 
 const banglaCurrency = new Intl.NumberFormat("bn-BD", {
